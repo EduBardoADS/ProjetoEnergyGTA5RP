@@ -4,10 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
     <title>Tabela Médicos Energy City GTA RP</title>
-    <link rel="stylesheet" href="./css/syle.css">
-    <script type="text/javascript" src="./js/"></script>
 
 </head>
 
@@ -28,15 +26,19 @@
     }
 
     body {
-        background-image: url('https://i.postimg.cc/FFVGgVz4/energy.jpg' ) ;
+        background-image: url('https://i.postimg.cc/FFVGgVz4/energy.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100%;
-        width: 100%;
+        min-height: 100vh;
+        min-width: 100vw;
         margin-left: 15%;
-
     }
-    
+
+    @media only screen and (max-width: 600px) {
+        body {
+            margin-left: 0;
+        }
+    }
 
     form {
         display: flex;
@@ -53,7 +55,12 @@
         box-shadow: 5px 5px 10px black;
         margin-left: auto;
         margin-right: auto;
+    }
 
+    @media only screen and (max-width: 600px) {
+        form {
+            width: 80%;
+        }
     }
 
     form label {
@@ -80,7 +87,7 @@
     }
 
     form button[type="submit"]:hover {
-        background-color: #005CA9;
+        background-color: #005
     }
 
     #resultado {
@@ -106,7 +113,14 @@
         margin-top: 5px;
         margin-left: auto;
         margin-right: auto;
+    }
 
+    @media (max-width: 768px) {
+        .dados {
+            width: 80%;
+            height: auto;
+            margin: 10%;
+        }
     }
 
     label {
@@ -167,13 +181,13 @@
         <p id="resultado"></p>
 
     </form>
-    
+
 
     <div class="dados">
         <h2>CRIADO POR:</h2>
         <p>DR Frank Castle (Médico de Energy City) Passaporte: 2075 </p><br>
         <p>Twitch: Threeminutes4play - Contato: aguiar.work@gmail.com </p><br>
-        <p>Energy &copy;    Versão 1.0.0</p><br>
+        <p>Energy &copy; Versão 1.0.3</p><br>
 
     </div>
 </body>
